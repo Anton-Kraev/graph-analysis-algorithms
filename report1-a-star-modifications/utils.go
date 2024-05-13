@@ -24,3 +24,9 @@ type Edge[T Number] struct {
 	to int
 	c  T
 }
+
+type Node[T Number] struct {
+	v               int
+	cost, heuristic T
+	p               *Node[T]
+}
